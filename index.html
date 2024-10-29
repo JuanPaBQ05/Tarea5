@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>JavaScript Usos</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <meta content="" name="keywords" />
+        <meta content="" name="description" />
+      
+        <script src="main.js"></script>
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon" />
+      
+        <!-- Icon Font Stylesheet -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
+      
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+      
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet" />
+      </head>
+
+      <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <h1 class="fw-bold text-primary m-0">JavaScript en html</h1>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                        <li><a class="nav-link" href="#"> Home</a></li>
+                        <li><a class="nav-link" href="#">Nosotros</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Informacion
+                            </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">Blog</a></li>
+                                    <li><a class="dropdown-item" href="#">Características</a></li>
+                                    <li><a class="dropdown-item" href="#">Fincas</a></li>
+                                </ul>
+                        </li>
+                        <li><a class="nav-link" href="#">Contáctenos</a></li>
+                    </ul>
+                
+                </div>
+                </nav>
+
+
+        </header>
+
+
+        <main class="text-center bg-secondary p-5">
+            <section class="container text-center mx-auto bg-light mb-3">
+                    <h1> Ejemplos de uso de JavaScript en html</h1>
+                    <p>Un ejemplo function en el cual se usa un if else y control de errores para verificar si una nota es aprobada o rechazada</p>
+                    <div class="mb-3 text-center">
+                        <label for="inputNota" class="form-label">Ingresa tu calificación:</label>
+                        <input type="text" id="inputNota" class="form-control w-50" placeholder="Ingrese una calificación">
+                    </div>
+                    
+                    <button onclick="verificarCalificacion()" class="btn btn-primary mb-3">Verificar</button>
+                    
+                    <div id="resultado" class="alert" role="alert" style="display: none;"></div>
+            </section>
+            <section class="container text-center mx-auto bg-light mb-3 p-4">
+                <h1> Ejemplos de ciclos</h1>
+                <div class="mb-3 mt-5 text-center">
+                    <label for="numero" class="form-label">Como ejemplo de los distintos ciclos, ingrese un numero del 0 al 10</label>
+                    <input type="number" id="numero" class="form-control w-50" min="1" max="5" required>
+                </div>
+        
+                <button onclick="mostrarCiclos()" class="btn btn-primary mb-3">Mostrar Resultados</button>
+        
+                <div class="mb-3 text-center mx-auto">
+                    <h3>Resultado For</h3>
+                    <div id="bucle-for" class="alert alert-secondary w-50"></div>
+                </div>
+        
+                <div class="mb-3 text-center mx-auto">
+                    <h3>Resultado While</h3>
+                    <div id="bucle-while" class="alert alert-secondary w-50"></div>
+                </div>
+        
+                <div class="mb-3 text-center mx-auto">
+                    <h3>Resultado DoWhile</h3>
+                    <div id="bucle-DoWhile" class="alert alert-secondary w-50"></div>
+                </div>
+            </section>
+
+            <section class="container mx-auto bg-light text-center p-4 mb-3">
+                <h1 class="mb-3">Ejemplos de Number, Math y Date</h1>
+                <h3>Ejemplo con un Numero constante</h3>
+                <p id="numberExample"></p>
+                <h3>Ejmplo usando math con random</h3>
+                <p id="mathExample"></p>
+                <h3>Ejemplo usando la fecha actual</h3>
+                <p id="dateExample"></p>
+            </section>
+
+            <section class="container mx-auto bg-light text-center p-4 mb-3">
+                <h1>Ejemplos de Arreglos y Arreglos Tipados en JavaScript</h1>
+                <p id="arrayExample"></p>
+                <p id="typedArrayExample"></p>
+
+                <!-- Vincula el archivo JavaScript -->
+                <script src="arrays.js"></script>
+            </section>
+
+        <section class="container mx-auto bg-light text-center p-4">
+            <h1>Ejemplos de Selección en el DOM</h1>
+
+            <p id="parrafoID">Párrafo con ID</p>
+            <p class="parrafoClase">Párrafo con clase 1</p>
+            <p class="parrafoClase">Párrafo con clase 2</p>
+            <div>Primer div</div>
+            <div>Segundo div</div>
+            <span>Span de ejemplo</span>
+            <script src="dom.js"></script>
+        </section>
+
+        </main>
+        <script src="main.js"></script>
+
+      </body>
+</html>
